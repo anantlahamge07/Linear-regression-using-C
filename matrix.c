@@ -29,6 +29,38 @@ double get(Matrix *matrix, int row, int col){
     return matrix -> data[row][col];
 }
 
+Matrix product(Matrix *m1, Matrix *m2){
+    Matrix result;
+    for (int i = 0; i < m1 -> row; i++)
+    {
+        for (int j = 0; j < m2 -> col; j++)
+        {
+            for (int k = 0; k < m2 -> row; k++)
+            {
+                result.data[i][j] += (m1 -> data[i][k])* m2 -> (data[k][j]);
+            }
+            
+        }
+        
+    }
+    return result;
+}
+
+
+Matrix add(Matrix *m1, Matrix *m2){
+    Matrix result;
+    for (int i = 0; i < m1 -> row; i++)
+    {
+        for (int j = 0; j < m1 -> col; j++)
+        {
+            result.data[i][j] = (m1 -> data[i][j]) + (m1 -> data[i][j]);
+            
+        }
+        
+    }
+    return result;
+}
+
 
 
 void print_matrix(Matrix *matrix){

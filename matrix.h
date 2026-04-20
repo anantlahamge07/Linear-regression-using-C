@@ -18,6 +18,11 @@ double get(Matrix *matrix, int row, int col);
 
 void print_matrix(Matrix *matrix);
 
+Matrix product(Matrix *m1, Matrix *m2);
+
+
+Matrix add(Matrix *m1, Matrix *m2);
+
 
 
 
