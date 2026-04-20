@@ -61,6 +61,54 @@ Matrix add(Matrix *m1, Matrix *m2){
     return result;
 }
 
+Matrix sub(Matrix *m1, Matrix *m2){
+    Matrix result;
+    for (int i = 0; i < m1 -> row; i++)
+    {
+        for (int j = 0; j < m1 -> col; j++)
+        {
+            result.data[i][j] = (m1 -> data[i][j]) - (m1 -> data[i][j]);
+            
+        }
+        
+    }
+    return result;
+}
+Matrix transpose(Matrix *m){
+    Matrix result;
+    for (int i = 0; i < m-> row; i++)
+    {
+        for (int j = 0; j < m -> col; j++)
+        {
+            result.data[j][i] = m -> data[i][j];
+            
+        }
+        
+    }
+    return result;
+}
+
+
+Matrix scalar_multiply(Matrix *m, double scalar){
+    Matrix result;
+    for (int i = 0; i < m -> row; i++)
+    {
+        for (int j = 0; j < m -> col; j++)
+        {
+            result.data[i][j] = scalar*(m -> data[i][j]) ;
+            
+        }
+        
+    }
+    return result;
+}
+
+
+
+
+
+
+
 
 
 void print_matrix(Matrix *matrix){

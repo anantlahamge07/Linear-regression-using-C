@@ -20,9 +20,13 @@ void print_matrix(Matrix *matrix);
 
 Matrix product(Matrix *m1, Matrix *m2);
 
-
 Matrix add(Matrix *m1, Matrix *m2);
 
+Matrix transpose(Matrix *m);
+
+Matrix sub(Matrix *m1, Matrix *m2);
+
+Matrix scalar_multiply(Matrix *m, double scalar);
 
 
 
