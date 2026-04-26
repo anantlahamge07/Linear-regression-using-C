@@ -37,7 +37,7 @@ Matrix product(Matrix *m1, Matrix *m2){
         {
             for (int k = 0; k < m2 -> row; k++)
             {
-                result.data[i][j] += (m1 -> data[i][k])* m2 -> (data[k][j]);
+                result.data[i][j] += (m1 -> data[i][k])* (m2 -> data[k][j]);
             }
             
         }
