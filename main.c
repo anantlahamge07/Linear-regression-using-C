@@ -10,7 +10,6 @@ int main() {
 
 
 // ===== 1. Create dataset =====
-// y = 2x
 
 Matrix X = create_matrix(4, 1);
 Matrix y = create_matrix(4, 1);
